@@ -1,0 +1,13 @@
+# misc
+.DS_Store
+
+# idea
+/.idea
+/.idea/workspace.xml
+/.idea/deployment.xml
+/.idea/shelf
+/.idea/libraries
+/.idea/replstate.xml
+/.idea/kotlinc.xml
+/.idea/vcs.xml
+.vscode/
