@@ -45,20 +45,24 @@
     }
 
     @media (prefers-color-scheme: dark) {
-      body, 
-      td[class="darkBg"], 
+      body,
+      td[class="darkBg"],
       td[class="lightBg"] {
         background-color: #000 !important;
         color: #fff !important;
       }
-      a {
-        color: #FF9614 !important;
+      td[class="invertDark"] {
+        background-color: #fff !important;
+      }
+      a[class="invertDarkToWhiteLink"] {
+        color: #fff !important;
       }
       a[class="whiteLink"] {
         color: #fff !important;
       }
-      div[class="borderedElement"] {
+      a[class="borderedElement"] {
         border-color: #fff !important;
+        color: #fff !important;
       }
     }
   </style>
@@ -134,7 +138,7 @@
       <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 700px; min-width: 335px;">
         <tr>
           <td style="padding: 0;" valign="middle" align="center">
-            <a href="#" style="font-size: 15px; font-weight: bold; line-height: 45px; display: inline-block; border: 2px solid #000; color: #000; text-decoration: none; background-color: #FD7C0F; border-radius: 30px; padding: 0 10%; text-align: center; white-space: nowrap;">
+            <a href="#" class="borderedElement" style="font-size: 15px; font-weight: bold; line-height: 45px; display: inline-block; border: 2px solid #000; color: #000; text-decoration: none; background-color: #FD7C0F; border-radius: 30px; padding: 0 10%; text-align: center; white-space: nowrap;">
               Open Curve
             </a>
           </td>
@@ -155,13 +159,13 @@
                 </td>
                 <td style="padding: 0 0 0 28px;" valign="top">
                   <p style="padding: 0; margin: 0 0 10px 0; font-size: 12px; line-height: 1.5;">
-                    The **<a style="color: #000;" href="https://www.vectornator.io/learn/the-interface#the-help-menu-on-ipad">Help button</a>—**located left of the Inspector on iPad and on the Menu bar on Mac—gives you access to all our learning resources.
+                    The **<a style="color: #000;" class="invertDarkToWhiteLink" href="https://www.vectornator.io/learn/the-interface#the-help-menu-on-ipad">Help button</a>—**located left of the Inspector on iPad and on the Menu bar on Mac—gives you access to all our learning resources.
                   </p>
                   <p style="padding: 0; margin: 0 0 20px 0; font-size: 12px; line-height: 1.5;">
                     If you're using an iPad, you can activate Help Mode to stay in the Editor screen. This special feature turns your iPad into an interactive learning platform. Tap and long-press on highlighted tools to learn how they work.
                   </p>
                   <p style="padding: 0; margin: 0; font-size: 15px; line-height: 1.5;">
-                    <a style="display: inline-block; color: #000; font-weight: bold; font-size: 12px; text-decoration: none; line-height: 37px; padding: 0 24px; border: 2px solid #000; border-radius: 38px;" href="https://www.vectornator.io/learn/the-interface#the-help-menu-on-ipad">To User Manual</a>
+                    <a class="borderedElement" style="display: inline-block; color: #000; font-weight: bold; font-size: 12px; text-decoration: none; line-height: 37px; padding: 0 24px; border: 2px solid #000; border-radius: 38px;" href="https://www.vectornator.io/learn/the-interface#the-help-menu-on-ipad">To User Manual</a>
                   </p>
                 </td>
               </tr>
@@ -183,10 +187,10 @@
                 </td>
                 <td style="padding: 0 0 0 28px;" valign="top">
                   <p style="padding: 0; margin: 0 0 20px 0; font-size: 12px; line-height: 1.5;">
-                    <a style="color: #000;" href="https://academy.vectornator.io/">Linearity Academy</a> is home to a vast library of free video tutorials and courses for all levels. It's an excellent resource for those looking for project ideas, as well as those interested in diving deeper into tool capabilities.
+                    <a style="color: #000;" class="invertDarkToWhiteLink" href="https://academy.vectornator.io/">Linearity Academy</a> is home to a vast library of free video tutorials and courses for all levels. It's an excellent resource for those looking for project ideas, as well as those interested in diving deeper into tool capabilities.
                   </p>
                   <p style="padding: 0; margin: 0; font-size: 12px; line-height: 1.5;">
-                    <a style="display: inline-block; color: #000; font-weight: bold; font-size: 12px; text-decoration: none; line-height: 37px; padding: 0 24px; border: 2px solid #000; border-radius: 38px;" href="https://academy.vectornator.io/">To Linearity Academy</a>
+                    <a class="borderedElement" style="display: inline-block; color: #000; font-weight: bold; font-size: 12px; text-decoration: none; line-height: 37px; padding: 0 24px; border: 2px solid #000; border-radius: 38px;" href="https://academy.vectornator.io/">To Linearity Academy</a>
                   </p>
                 </td>
               </tr>
@@ -208,10 +212,10 @@
                 </td>
                 <td style="padding: 0 0 0 28px;" valign="top">
                   <p style="padding: 0; margin: 0 0 20px 0; font-size: 12px; line-height: 1.5;">
-                    Our <a style="color: #000;" href="https://www.vectornator.io/blog/">Blog</a> features over 100 step-by-step tutorials designed to ignite your imagination and inspire your next designs.
+                    Our <a style="color: #000;" class="invertDarkToWhiteLink" href="https://www.vectornator.io/blog/">Blog</a> features over 100 step-by-step tutorials designed to ignite your imagination and inspire your next designs.
                   </p>
                   <p style="padding: 0; margin: 0; font-size: 12px; line-height: 1.5;">
-                    <a style="display: inline-block; color: #000; font-weight: bold; font-size: 12px; text-decoration: none; line-height: 37px; padding: 0 24px; border: 2px solid #000; border-radius: 38px;" href="https://www.vectornator.io/blog/">To Our Blog</a>
+                    <a class="borderedElement" style="display: inline-block; color: #000; font-weight: bold; font-size: 12px; text-decoration: none; line-height: 37px; padding: 0 24px; border: 2px solid #000; border-radius: 38px;" href="https://www.vectornator.io/blog/">To Our Blog</a>
                   </p>
                 </td>
               </tr>
@@ -230,7 +234,7 @@
           <td style="padding-top: 30px; padding-right: 5%; padding-bottom: 40px; padding-left: 5%;">
             <table cellpadding="0" cellspacing="0" border="0" align="center" style="max-width: 600px; min-width: 335px;">
               <tr>
-                <td style="height: 1px; background: #000;"></td>
+                <td class="invertDark" style="height: 1px; background: #000;"></td>
               </tr>
             </table>
           </td>
@@ -242,7 +246,7 @@
               <tr>
                 <td style="padding: 0;" valign="middle" align="center">
                   <h2 style="padding: 0; margin: 0 0 20px 0; font-size: 15px; font-weight: bold;">Let’s put your new knowledge to the test.</h2>
-                  <a href="#" style="font-size: 15px; font-weight: bold; line-height: 45px; display: inline-block; border: 2px solid #000; color: #000; text-decoration: none; background-color: #FD7C0F; border-radius: 30px; padding: 0 10%; text-align: center; white-space: nowrap;">
+                  <a href="#" class="borderedElement" style="font-size: 15px; font-weight: bold; line-height: 45px; display: inline-block; border: 2px solid #000; color: #000; text-decoration: none; background-color: #FD7C0F; border-radius: 30px; padding: 0 10%; text-align: center; white-space: nowrap;">
                     Open Curve
                   </a>
                   <p style="font-size: 15px; line-height: 1.5; padding: 25px 0 0 0; margin: 0;">

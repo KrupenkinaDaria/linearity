@@ -58,20 +58,33 @@
     }
 
     @media (prefers-color-scheme: dark) {
-      body, 
-      td[class="darkBg"], 
+      body,
+      td[class="darkBg"],
       td[class="lightBg"] {
         background-color: #000 !important;
         color: #fff !important;
       }
-      a {
-        color: #FF9614 !important;
+      td[class="invertDark"] {
+        background-color: #fff !important;
+      }
+      a[class="invertDarkToWhiteLink"] {
+        color: #fff !important;
+      }
+      *[class="invertDarkToWhiteText"] {
+        color: #fff !important;
       }
       a[class="whiteLink"] {
         color: #fff !important;
       }
-      div[class="borderedElement"] {
+      td[class="hidden"],
+      td[class="visible"],
+      td[class="borderedElement"],
+      a[class="borderedElement"] {
         border-color: #fff !important;
+        color: #fff !important;
+      }
+      td[class="fixDarkFont"] {
+        color: #000 !important;
       }
     }
   </style>
@@ -148,13 +161,14 @@
           <td class="lightBg" style="padding-top: 0; padding-right: 5%; padding-bottom: 35px; padding-left: 5%;" valign="middle" align="center">
             <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 600px; min-width: 335px; border-radius: 25px; overflow: hidden;">
               <tr>
-                <td style="padding: 25px 30px; background-color: #FFF8F3;" valign="top">
-                  <h2 style="padding: 0; margin: 0 0 20px 0; font-size: 15px; font-weight: bold;">The Birth of <br/>
+                <td  class="fixDarkFont" style="padding: 25px 30px; background-color: #FFF8F3;" valign="top">
+                  <h2 style="padding: 0; margin: 0 0 20px 0; font-size: 15px; font-weight: bold; color: #000;">
+                    The Birth of <br/>
                     Bézier Curves</h2>
-                  <p style="padding: 0; margin: 0 0 40px 0; font-size: 15px; line-height: 1.5;">
+                  <p style="padding: 0; margin: 0 0 40px 0; font-size: 15px; line-height: 1.5; color: #000;">
                     Learn everything you need to know about Bézier curves and how the mathematical equation.
                   </p>
-                  <p style="padding: 0; margin: 0; font-size: 15px; line-height: 1.5;">
+                  <p style="padding: 0; margin: 0; font-size: 15px; line-height: 1.5; color: #000;">
                     <a style="display: inline-block; background-color: #fff; color: #000; font-weight: bold; font-size: 12px; text-decoration: none; line-height: 37px; padding: 0 24px; border: 2px solid #000; border-radius: 38px;" href="#">Open Curve</a>
                   </p>
                 </td>
@@ -176,7 +190,7 @@
               <tr>
                 <td style="width: 30%; height: 100%; background-image: url(https://raw.githubusercontent.com/KrupenkinaDaria/linearity/master/img/side-bg2.png); background-repeat: no-repeat; background-position:0 0; background-size: cover; line-height: 0;">
                 </td>
-                <td style="padding: 25px 30px; background-color: #FFF8F3;" valign="top">
+                <td class="fixDarkFont" style="padding: 25px 30px; background-color: #FFF8F3;" valign="top">
                   <h2 style="padding: 0; margin: 0 0 20px 0; font-size: 15px; font-weight: bold;">
                     How to Avoid <br/>
                     Digital Art Theft</h2>
@@ -201,7 +215,7 @@
           <td class="lightBg" style="padding-top: 0; padding-right: 5%; padding-bottom: 35px; padding-left: 5%;" valign="middle" align="center">
             <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 600px; min-width: 335px; border-radius: 25px; overflow: hidden;">
               <tr>
-                <td style="padding: 25px 30px; background-color: #FFF8F3;" valign="top">
+                <td  class="fixDarkFont" style="padding: 25px 30px; background-color: #FFF8F3;" valign="top">
                   <h2 style="padding: 0; margin: 0 0 20px 0; font-size: 15px; font-weight: bold;">The Birth of <br/>
                     Bézier Curves</h2>
                   <p style="padding: 0; margin: 0 0 40px 0; font-size: 15px; line-height: 1.5;">
@@ -227,45 +241,47 @@
       <table cellpadding="0" cellspacing="0" border="0" width="100%" >
         <tr>
           <td style="padding-top: 30px; padding-right: 5%; padding-bottom: 40px; padding-left: 5%;">
-            <h3 style="font-size: 15px; font-weight: normal; padding: 0; margin: 0 0 20px 0;">Here are all the file types that we support:</h3>
+            <h3 class="invertDarkToWhiteText" style="font-size: 15px; font-weight: normal; padding: 0; margin: 0 0 20px 0; color: #000;">
+              Here are all the file types that we support:
+            </h3>
             <table cellpadding="0" cellspacing="0" border="0" align="center" style="max-width: 600px; min-width: 335px;">
               <tr>
-                <td style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 12px 10px; line-height: 14px; text-align: center;">
+                <td class="borderedElement" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 10px 0.5vw; line-height: 14px; text-align: center;">
                   SVG
                 </td>
                 <td style="width: 2%;"></td>
 
-                <td style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 12px 10px; line-height: 14px; text-align: center;">
+                <td class="borderedElement" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 10px 0.5vw; line-height: 14px; text-align: center;">
                   PNG
                 </td>
                 <td style="width: 2%;"></td>
 
-                <td style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 12px 10px; line-height: 14px; text-align: center;">
+                <td class="borderedElement" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 10px 0.5vw; line-height: 14px; text-align: center;">
                   LINEARITY
                 </td>
                 <td style="width: 2%;"></td>
 
-                <td style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 12px 10px; line-height: 14px; text-align: center;">
+                <td class="borderedElement" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 10px 0.5vw; line-height: 14px; text-align: center;">
                   JPG
                 </td>
                 <td class="hidden" style="width: 2%;"></td>
 
-                <td class="hidden" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 12px 10px; line-height: 14px; text-align: center;">
+                <td class="hidden" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 10px 0.5vw; line-height: 14px; text-align: center;">
                   SKETCH
                 </td>
                 <td class="hidden" style="width: 2%;"></td>
 
-                <td class="hidden" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 12px 10px; line-height: 14px; text-align: center;">
+                <td class="hidden" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 10px 0.5vw; line-height: 14px; text-align: center;">
                   PDF
                 </td>
                 <td class="hidden" style="width: 2%;"></td>
 
-                <td class="hidden" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 12px 10px; line-height: 14px; text-align: center;">
+                <td class="hidden" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 10px 0.5vw; line-height: 14px; text-align: center;">
                   FIGMA
                 </td>
                 <td class="hidden" style="width: 2%;"></td>
 
-                <td class="hidden" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 12px 10px; line-height: 14px; text-align: center;">
+                <td class="hidden" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 10px 0.5vw; line-height: 14px; text-align: center;">
                   AI
                 </td>
               </tr>
@@ -279,22 +295,22 @@
                 <td class="visible" style="height: 5px;"></td>
               </tr>
               <tr>
-                <td class="visible" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 12px 10px; line-height: 14px; text-align: center;">
+                <td class="visible" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 10px 0.5vw; line-height: 14px; text-align: center;">
                   SKETCH
                 </td>
                 <td class="visible" style="width: 2%;"></td>
 
-                <td class="visible" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 12px 10px; line-height: 14px; text-align: center;">
+                <td class="visible" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 10px 0.5vw; line-height: 14px; text-align: center;">
                   PDF
                 </td>
                 <td class="visible" style="width: 2%;"></td>
 
-                <td class="visible" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 12px 10px; line-height: 14px; text-align: center;">
+                <td class="visible" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 10px 0.5vw; line-height: 14px; text-align: center;">
                   FIGMA
                 </td>
                 <td class="visible" style="width: 2%;"></td>
 
-                <td class="visible" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 12px 10px; line-height: 14px; text-align: center;">
+                <td class="visible" style="border: 1px solid #000; border-radius: 8px; font-size: 11px; font-weight: bold; padding: 10px 0.5vw; line-height: 14px; text-align: center;">
                   AI
                 </td>
               </tr>
