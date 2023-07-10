@@ -43,15 +43,17 @@
       font-size: 14px;
       vertical-align: top;
     }
-
+    table[class="visible"],
     table td[class="visible"] {
       display: none !important;
     }
 
     @media screen and (max-width: 500px) {
+      table[class="visible"],
       table td[class="visible"] {
         display: table-cell !important;
       }
+      table[class="hidden"],
       table td[class="hidden"] {
         display: none !important;
       }
@@ -156,7 +158,7 @@
 
   <tr>
     <td align="center" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" valign="top">
-      <table cellpadding="0" cellspacing="0" border="0" width="100%" >
+      <table cellpadding="0" cellspacing="0" border="0" width="100%" class="hidden">
         <tr>
           <td class="lightBg" style="padding-top: 0; padding-right: 5%; padding-bottom: 35px; padding-left: 5%;" valign="middle" align="center">
             <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 600px; min-width: 335px; border-radius: 25px; overflow: hidden;">
@@ -172,7 +174,7 @@
                     <a style="display: inline-block; background-color: #fff; color: #000; font-weight: bold; font-size: 12px; text-decoration: none; line-height: 37px; padding: 0 24px; border: 2px solid #000; border-radius: 38px;" href="#">Open Curve</a>
                   </p>
                 </td>
-                <td style="width: 30%; height: 100%; background-image: url(https://raw.githubusercontent.com/KrupenkinaDaria/linearity/master/img/side-bg1.png); background-repeat: no-repeat; background-position:0 0; background-size: cover; line-height: 0;">
+                <td style="width: 40%; height: 100%; background-image: url(https://raw.githubusercontent.com/KrupenkinaDaria/linearity/master/img/side-bg1.png); background-repeat: no-repeat; background-position:0 0; background-size: cover; line-height: 0;">
                 </td>
               </tr>
             </table>
@@ -183,12 +185,12 @@
   </tr>
   <tr>
     <td align="center" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" valign="top">
-      <table cellpadding="0" cellspacing="0" border="0" width="100%" >
+      <table cellpadding="0" cellspacing="0" border="0" width="100%" class="hidden">
         <tr>
           <td class="lightBg" style="padding-top: 0; padding-right: 5%; padding-bottom: 35px; padding-left: 5%;" valign="middle" align="center">
             <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 600px; min-width: 335px; border-radius: 25px; overflow: hidden;">
               <tr>
-                <td style="width: 30%; height: 100%; background-image: url(https://raw.githubusercontent.com/KrupenkinaDaria/linearity/master/img/side-bg2.png); background-repeat: no-repeat; background-position:0 0; background-size: cover; line-height: 0;">
+                <td style="width: 40%; height: 100%; background-image: url(https://raw.githubusercontent.com/KrupenkinaDaria/linearity/master/img/side-bg2.png); background-repeat: no-repeat; background-position:0 0; background-size: cover; line-height: 0;">
                 </td>
                 <td class="fixDarkFont" style="padding: 25px 30px; background-color: #FFF8F3;" valign="top">
                   <h2 style="padding: 0; margin: 0 0 20px 0; font-size: 15px; font-weight: bold;">
@@ -208,9 +210,10 @@
       </table>
     </td>
   </tr>
+
   <tr>
     <td align="center" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" valign="top">
-      <table cellpadding="0" cellspacing="0" border="0" width="100%" >
+      <table cellpadding="0" cellspacing="0" border="0" width="100%" class="hidden">
         <tr>
           <td class="lightBg" style="padding-top: 0; padding-right: 5%; padding-bottom: 35px; padding-left: 5%;" valign="middle" align="center">
             <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 600px; min-width: 335px; border-radius: 25px; overflow: hidden;">
@@ -225,7 +228,7 @@
                     <a style="display: inline-block; background-color: #fff; color: #000; font-weight: bold; font-size: 12px; text-decoration: none; line-height: 37px; padding: 0 24px; border: 2px solid #000; border-radius: 38px;" href="#">Open Curve</a>
                   </p>
                 </td>
-                <td style="width: 30%; height: 100%; background-image: url(https://raw.githubusercontent.com/KrupenkinaDaria/linearity/master/img/side-bg3.png); background-repeat: no-repeat; background-position:0 0; background-size: cover; line-height: 0;">
+                <td style="width: 40%; height: 100%; background-image: url(https://raw.githubusercontent.com/KrupenkinaDaria/linearity/master/img/side-bg3.png); background-repeat: no-repeat; background-position:0 0; background-size: cover; line-height: 0;">
                 </td>
               </tr>
             </table>
@@ -235,6 +238,64 @@
     </td>
   </tr>
 
+  <tr>
+    <td align="center" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" valign="top">
+      <table cellpadding="0" cellspacing="0" border="0" width="100%" class="visible">
+        <tr>
+          <td class="lightBg" style="padding-top: 0; padding-right: 5%; padding-bottom: 35px; padding-left: 5%;" valign="middle" align="center">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 600px; min-width: 335px; border-radius: 25px; overflow: hidden;">
+              <tr>
+                <td style="width: 100%; height: 160px; background-image: url(https://raw.githubusercontent.com/KrupenkinaDaria/linearity/master/img/side-bg1.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; line-height: 0;">
+                </td>
+              </tr>
+              <tr>
+                <td  class="fixDarkFont" style="padding: 25px 30px; background-color: #FFF8F3;" valign="top">
+                  <h2 style="padding: 0; margin: 0 0 20px 0; font-size: 15px; font-weight: bold; color: #000;">
+                    The Birth of <br/>
+                    Bézier Curves</h2>
+                  <p style="padding: 0; margin: 0 0 40px 0; font-size: 15px; line-height: 1.5; color: #000;">
+                    Learn everything you need to know about Bézier curves and how the mathematical equation.
+                  </p>
+                  <p style="padding: 0; margin: 0; font-size: 15px; line-height: 1.5; color: #000;">
+                    <a style="display: inline-block; background-color: #fff; color: #000; font-weight: bold; font-size: 12px; text-decoration: none; line-height: 37px; padding: 0 24px; border: 2px solid #000; border-radius: 38px;" href="#">Open Curve</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" valign="top">
+      <table cellpadding="0" cellspacing="0" border="0" width="100%" class="visible">
+        <tr>
+          <td class="lightBg" style="padding-top: 0; padding-right: 5%; padding-bottom: 35px; padding-left: 5%;" valign="middle" align="center">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 600px; min-width: 335px; border-radius: 25px; overflow: hidden;">
+              <tr>
+                <td style="width: 100%; height: 160px; background-image: url(https://raw.githubusercontent.com/KrupenkinaDaria/linearity/master/img/side-bg2.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; line-height: 0;">
+                </td>
+              </tr>
+              <tr>
+                <td class="fixDarkFont" style="padding: 25px 30px; background-color: #FFF8F3;" valign="top">
+                  <h2 style="padding: 0; margin: 0 0 20px 0; font-size: 15px; font-weight: bold;">
+                    How to Avoid <br/>
+                    Digital Art Theft</h2>
+                  <p style="padding: 0; margin: 0 0 40px 0; font-size: 15px; line-height: 1.5;">
+                    Learn how to copyright your digital work and prevent people from stealing it.
+                  </p>
+                  <p style="padding: 0; margin: 0; font-size: 15px; line-height: 1.5;">
+                    <a style="display: inline-block; background-color: #fff; color: #000; font-weight: bold; font-size: 12px; text-decoration: none; line-height: 37px; padding: 0 24px; border: 2px solid #000; border-radius: 38px;" href="#">Continue reading</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
 
   <tr>
     <td align="center" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" valign="top">
@@ -388,7 +449,7 @@
                   <table cellpadding="0" cellspacing="0" border="0" width="100%" style="width: 100%;">
                     <tr>
                       <td style="width: 32%;">
-                        <a href="#" style="display: block; height: 100%; text-decoration: none; background-color: #fff; border: 1px solid #000; border-radius: 12px; padding: 8px; line-height: 0;">
+                        <a href="#" style="display: block; height: 100%; text-decoration: none; background-color: #fff; border-radius: 12px; padding: 8px; line-height: 0;">
                           <img src="https://raw.githubusercontent.com/KrupenkinaDaria/linearity/master/img/article-preview-1.png" alt="">
                           <span style="display: block; color: #FD7C0F; font-size: 8px; line-height: 1.5; padding: 8px 0 4px 0;">Academy</span>
                           <span style="display: block; color: #000; font-size: 10px; font-weight: bold; line-height: 1.5; padding: 0;">How to Draw a Car</span>
@@ -396,7 +457,7 @@
                       </td>
                       <td style="width: 2%;"></td>
                       <td style="width: 32%;">
-                        <a href="#" style="display: block; height: 100%; text-decoration: none; background-color: #fff; border: 1px solid #000; border-radius: 12px; padding: 8px; line-height: 0;">
+                        <a href="#" style="display: block; height: 100%; text-decoration: none; background-color: #fff; border-radius: 12px; padding: 8px; line-height: 0;">
                           <img src="https://raw.githubusercontent.com/KrupenkinaDaria/linearity/master/img/article-preview-2.png" alt="">
                           <span style="display: block; color: #FD7C0F; font-size: 8px; line-height: 1.5; padding: 8px 0 4px 0;">Blog</span>
                           <span style="display: block; color: #000; font-size: 10px; font-weight: bold; line-height: 1.5; padding: 0;">Background removal</span>
@@ -404,7 +465,7 @@
                       </td>
                       <td style="width: 2%;"></td>
                       <td style="width: 32%;">
-                        <a href="#" style="display: block; height: 100%; text-decoration: none; background-color: #fff; border: 1px solid #000; border-radius: 12px; padding: 8px; line-height: 0;">
+                        <a href="#" style="display: block; height: 100%; text-decoration: none; background-color: #fff; border-radius: 12px; padding: 8px; line-height: 0;">
                           <img src="https://raw.githubusercontent.com/KrupenkinaDaria/linearity/master/img/article-preview-3.png" alt="">
                           <span style="display: block; color: #FD7C0F; font-size: 8px; line-height: 1.5; padding: 8px 0 4px 0;">User Manual</span>
                           <span style="display: block; color: #000; font-size: 10px; font-weight: bold; line-height: 1.5; padding: 0;">How to use tempates</span>
@@ -438,16 +499,16 @@
                 <td style="padding-top: 0; padding-right: 0; padding-bottom: 20px; padding-left: 0;" valign="middle">
                   <p style="font-size: 10px; line-height: 1.5; margin: 0; padding: 0; color: #fff; text-align: center;">
                     Copyright © Linearity GmbH, Sophienstr. 6, 10178 Berlin, Germany. All rights reserved.<br/>
-                    <a href="https://www.vectornator.io/" style="color: #fff; text-decoration: none;">linearity.io</a>
+                    <a href="https://www.vectornator.io/" style="color: #fff; text-decoration: none; font-size: 10px;">linearity.io</a>
                   </p>
                 </td>
               </tr>
               <tr>
                 <td style="padding: 0 0 20px 0; " valign="middle">
                   <p style="font-size: 10px; line-height: 1.5; margin: 0; padding: 0; text-align: center;">
-                    <a class="whiteLink" href="#terms-&-conditions" style="color: #fff; margin: 0 20px;">Terms & Conditions</a>
-                    <a class="whiteLink" href="#FAQ" style="color: #fff; margin: 0 20px;">FAQ</a>
-                    <a class="whiteLink" href="#privacy-policy" style="color: #fff; margin: 0 20px;">Privacy policy</a>
+                    <a class="whiteLink" href="#terms-&-conditions" style="color: #fff; margin: 0 20px; font-size: 10px;">Terms & Conditions</a>
+                    <a class="whiteLink" href="#FAQ" style="color: #fff; margin: 0 20px; font-size: 10px;">FAQ</a>
+                    <a class="whiteLink" href="#privacy-policy" style="color: #fff; margin: 0 20px; font-size: 10px;">Privacy policy</a>
                   </p>
                 </td>
               </tr>
@@ -485,7 +546,7 @@
                 <td style="padding-top: 20px; padding-right: 0; padding-bottom: 0; padding-left: 0;" valign="middle">
                   <p style="font-size: 8px; line-height: 1.5; margin: 0; padding: 0; color: #fff; text-align: center;">
                     Not interested anymore?
-                    <a href="%%unsubscribe%%" style="color: #fff; font-weight: bold;">Unsubscribe me from this list.</a>
+                    <a href="%%unsubscribe%%" style="color: #fff; font-weight: bold; font-size: 8px;">Unsubscribe me from this list.</a>
                   </p>
                 </td>
               </tr>
